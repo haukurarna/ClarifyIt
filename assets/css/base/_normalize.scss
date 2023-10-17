@@ -67,8 +67,19 @@ dfn {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-family: 'Montserrat', sans-serif;
+  /* Set the custom font */
+  font-weight: 700;
+  /* Set the weight to bold */
+  font-size: 1pt;
+  margin: 0.67em 0.67em 0.67em 0;
+  /* Top, Right, Bottom, Left */
+  max-width: 50%;
+  /* Limited width */
+  background-color: #ff0;
+  /* For visibility */
+  border: 1px solid red;
+  /* For debugging */
 }
 
 mark {
