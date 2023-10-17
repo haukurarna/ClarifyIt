@@ -3,10 +3,16 @@
   display: flex
   width: 700px
   max-width: 75%
-  height: 100%
+  height: calc(100vh - 10%) // 90% of viewport height
   flex-direction: column
-  justify-content: center
+  justify-content: flex-start
   margin: 0 auto
+  padding-top: 15% // Leave top 10% blank
+
+  .scrollable-content
+    flex-grow: 1
+    overflow-y: auto // Enable scrolling
+    height: calc(100%) // Adjust this based on your needs
 
   @media (max-width: 1180px)
     max-width: 100%

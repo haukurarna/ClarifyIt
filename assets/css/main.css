@@ -103,10 +103,6 @@ h1 {
   margin: 0.67em 0.67em 0.67em 0;
   /* Top, Right, Bottom, Left */
   max-width: 50%;
-  /* Limited width */
-  background-color: #ff0;
-  /* For visibility */
-  border: 1px solid red;
   /* For debugging */
 }
 
@@ -715,7 +711,7 @@ body {
     height: 360px;
   }
   .intro--banner h1 {
-    font-size: 55px;
+    font-size: 2.8em;
   }
   .intro--banner img {
     display: none;
@@ -1161,10 +1157,16 @@ body {
   display: flex;
   width: 700px;
   max-width: 75%;
-  height: 100%;
+  height: calc(100vh - 10%);
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
+  padding-top: 15%;
+}
+.hire .scrollable-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100%;
 }
 @media (max-width: 1180px) {
   .hire {
