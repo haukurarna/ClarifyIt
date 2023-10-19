@@ -8,6 +8,14 @@
   justify-content: center
   margin: 0 auto
 
+  &--aiText
+    padding: 20px
+    font-size: 18px
+    line-height: 1.6
+    color: $textColor  // Define $textColor if not already done
+
+
+
   @media (max-width: 1180px)
     max-width: 100%
 
@@ -130,6 +138,8 @@
 @media (max-width: 767px)
 
   .about
+    &--aiText
+      font-size: 12px
 
     &--banner
       height: 305px
@@ -160,6 +170,9 @@
 @media (max-width: 600px)
 
   .about
+
+    &--aiText
+      font-size: 14px  
 
     &--banner
       height: auto
