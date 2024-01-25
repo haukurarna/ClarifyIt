@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>66°NORTH - Service Update</title>
     <style>
+        * {
+            box-sizing: border-box;
+            /* Ensures padding is included in the width */
+        }
+
         html,
         body {
             height: 100%;
@@ -27,65 +32,55 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* Centers content vertically */
         }
 
-        .navbar {
+        .navbar,
+        .footer {
             background-color: #082644;
             color: white;
             padding: 20px 40px;
             display: flex;
-            /* Enable flexbox */
             align-items: center;
-            /* Center items vertically */
             justify-content: space-between;
-            /* Space between logo and any other navbar items */
         }
-
 
         .main-content {
             text-align: center;
             padding: 50px 20px;
             background-color: #eee;
             margin: auto;
-            /* Ensures margin on all sides */
             width: 100%;
             max-width: 1200px;
-        }
-
-        .footer {
-            background-color: #082644;
-            color: white;
-            text-align: center;
-            padding: 20px 40px;
-            width: 100%;
         }
 
         .button {
             display: inline-block;
             padding: 15px 30px;
-            margin: 20px;
+            margin: 20px auto;
+            /* Center buttons */
             background-color: #082644;
+            /* Adjusted to a different blue for contrast */
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 20px;
             transition: background-color 0.3s ease;
+            cursor: pointer;
+            /* Indicates the link is clickable */
         }
 
         .button:hover {
             background-color: #082644;
+            /* Darker blue on hover for feedback */
         }
 
         @media (max-width: 768px) {
-
-      
-
             .button {
                 padding: 10px 20px;
-                margin: 12px;
-                font-size: 20px;
-                
+                margin: 10px auto;
+                /* Adjusted margin for mobile */
+                font-size: 18px;
+                /* Slightly smaller font on mobile */
             }
         }
     </style>
