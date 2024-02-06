@@ -1,1 +1,0 @@
-# ClarifyIt.AI

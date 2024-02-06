@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>66°NORTH - Service Update</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Ensures padding is included in the width */
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eee;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .navbar,
+        .footer {
+            background-color: #082644;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eee;
+            margin: auto;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px auto;
+            /* Center buttons */
+            background-color: #082644;
+            /* Adjusted to a different blue for contrast */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            /* Indicates the link is clickable */
+        }
+
+        .button:hover {
+            background-color: #082644;
+            /* Darker blue on hover for feedback */
+        }
+
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                margin: 10px auto;
+                /* Adjusted margin for mobile */
+                font-size: 18px;
+                /* Slightly smaller font on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="66°North_logo.svg" alt="66°NORTH Logo" style="height: 70px;">
+    </div>
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h1>Service Update</h1>
+            <p>We are experiencing a problem with our content service provider. We hope to get the original site up and
+                running as soon as possible.<br><br>Feel free to browse the site and checkout through the links below.
+            </p>
+            <a href="https://www.66north.com/is/konur" target="_blank" class="button">Click here for women</a>
+            <a href="https://www.66north.com/is/karlar" target="_blank" class="button">Click here for men</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 66°NORTH. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
